@@ -1,4 +1,5 @@
-import "@/styles/globals.css";
+import Navbar from "../components/Navbar";
+import "../styles/globals.css";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 
@@ -16,9 +17,11 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main
         className={`${montserrat.className} font-mont bg-light w-full min-h-screen`}
       >
+        <Navbar />
         <Component {...pageProps} />
       </main>
     </>
