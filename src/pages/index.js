@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from "next/image";
 import ProfilePicture from "../../public/images/profile/developer-pic-1.png";
+import LightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "../components/Icons";
@@ -59,6 +60,10 @@ export default function Home() {
         </Layout>
 
         <HireMe />
+
+        <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image src={LightBulb} alt="light bulb" className="w-full h-auto" />
+        </div>
       </main>
     </>
   );
