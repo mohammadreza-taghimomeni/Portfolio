@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Image from "next/image";
 import ProfilePic from "../../public/images/profile/me.jpg";
 import AnimatedNumbers from "../components/AnimatedNumbers";
+import Skills from "../components/Skills";
 
 const About = () => {
   return (
@@ -25,13 +26,15 @@ const About = () => {
               </h2>
 
               <p className="font-medium">
-                Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with
-                a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+                Hi, I&apos;m Mohammad Reza Taghimomeni, a front-End Developer
+                with proven experience at 5+ corporations in helping companies
+                create and maintain a better code base for reusability.
+                High-spirited about learning and development with a desire to
+                apply skills to a larger development team at Kasra. Eager to
+                tackle more complex problems and continue to find ways to
+                maximize user efficiency.
               </p>
-              <p className="my-4 font-medium">
+              {/* <p className="my-4 font-medium">
                 I believe that design is about more than just making things look
                 pretty – it&apos;s about solving problems and creating
                 intuitive, enjoyable experiences for users.
@@ -42,7 +45,7 @@ const About = () => {
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to
                 your next project.
-              </p>
+              </p> */}
             </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
@@ -54,11 +57,11 @@ const About = () => {
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={10} />+
                 </span>
 
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  Satisfied Clients
+                  Satisfied Companies
                 </h2>
               </div>
 
@@ -81,6 +84,8 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          <Skills />
         </Layout>
       </main>
     </>
